@@ -1,6 +1,6 @@
 # Shamelessly copied from http://flask.pocoo.org/docs/quickstart/
 
-from flask import Flask
+from flask import Flask, request
 app = Flask(__name__)
 
 @app.route('/')
