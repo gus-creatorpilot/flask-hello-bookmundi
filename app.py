@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 @app.route('/get_source/', methods=["GET","POST"])
 def get_source():
-    data = request.get_json()
-    if data and data.get("action"):
+    action = request.args.get("action") 
+    if action:
         return 'Hello World!'
 
 if __name__ == '__main__':
