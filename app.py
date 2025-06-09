@@ -3,9 +3,11 @@
 from flask import Flask, request
 app = Flask(__name__)
 
-@app.route('/')
-def hello_world():
-    return 'Hello World!'
+@app.route('/get_source/', methods=["GET","POST"])
+def get_source():
+    data = request.get_json()
+    if data and data.get("action"):
+        return 'Hello World!'
 
 if __name__ == '__main__':
     app.run()
