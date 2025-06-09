@@ -4,3 +4,4 @@ beautifulsoup4
 scrapingbee
 openai
 flask_cors
+requests
