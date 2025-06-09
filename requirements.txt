@@ -5,5 +5,3 @@ scrapingbee
 openai
 flask_cors
 requests
-re
-json
